@@ -4,18 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>TP PHP 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <h1><?php echo "Bienvenue dans mon premier TP PHP !"; ?></h1>
-
     <?php
-    $names = ["Abel", "Raphael", "Warren", "Davide", "Yacine"];
-    foreach ($names as $name) {
-        echo "<p>$name</p>";
-    }
+    $articles = [
+        "Apprendre PHP pas à pas",
+        "Faire sa premire requète SQL ",
+        "Créer sa première page web"
+    ];
     ?>
+
+    <div class="card">
+        <h2>Mes articles</h2>
+        <ul>
+            <?php
+            foreach ($articles as $article) {
+                echo "<li>$article</li>";
+            }
+
+            ?>
+        </ul>
+    </div>
 </body>
 
 </html>
