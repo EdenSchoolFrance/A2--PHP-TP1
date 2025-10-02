@@ -11,11 +11,9 @@
 </html> -->
 
 <?php 
-function test($age) {
-if ($age < "18") {
-    echo "<p>Je suis majeur(e)</p>";
-} else {
-    echo "<span>Je suis pas majeur(e)</span>";
-}};
 
-echo test("19");
+$name = array("Jean", "Aude", "Morgane", "Thelma", "Adam");
+
+foreach ($name as $x) {
+  echo "$x <br>";
+}
