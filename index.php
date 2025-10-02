@@ -1,7 +1,20 @@
 <?php 
-$prenoms = ["Victor", "Gary", "Jahel", "Nolan", "Warren"];
+$articles = [
+    "Apprendre PHP pas à pas",
+    "Faire sa premiere requète SQL",
+    "Créer sa première page web ",
+];
 
-foreach ($prenoms as $value) {
-    echo "\$prenoms: $value.\n";
-}
+
 ?>
+
+<div class="card">
+<h2>Mes articles</h2>
+<ul>
+    <?php 
+    foreach($articles as $article){
+       echo "<li>$article</li>";
+    }
+    ?>
+</ul>
+</div>
