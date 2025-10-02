@@ -7,12 +7,9 @@
 </head>
 <body>
     <h1><?php
-    $prenom = "Jean";
-    $age = 53;
-    if ($age >= 18) {
-        echo "<p style='color: lightgreen;'>Bonjour $prenom, vous êtes majeur.</p>";
-    } else {
-        echo "<p style='color: red;'>Bonjour $prenom, vous êtes mineur.</p>";
+    $tab = ["Jean", "Marie", "Pierre", "Sophie", "Gary"];
+    foreach($tab as $value) {
+        echo "Current element of \$array: $value.<br>";
     }
     ?></h1>
 </body>
