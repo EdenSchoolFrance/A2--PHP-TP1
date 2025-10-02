@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>TP PHP 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>
         <?php
         $prenom = "eloi";
-        $age = "17";
-         echo "je suis $prenom et j'ai $age ans";
+        $age = 17;
+        if ($age < 18) {
+            echo "<p class=test> je suis majeur $age </p>";
+        } else {
+            echo "je suis majeur $age";
+        }
+
           ?>
 
     </h1>
