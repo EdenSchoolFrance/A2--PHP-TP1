@@ -8,15 +8,13 @@
 <body>
     <h1>
         <?php
-        $prenom = "eloi";
-        $age = 17;
-        if ($age < 18) {
-            echo "<p class=test> je suis majeur $age </p>";
-        } else {
-            echo "je suis majeur $age";
+        $tableau = ["nolann1", "nolan2", "nolan3", "nolanimaginaire", "undefind"];
+
+        foreach ($tableau as $value) {
+            echo "$value ";
         }
 
-          ?>
+           ?>
 
     </h1>
 </body>
