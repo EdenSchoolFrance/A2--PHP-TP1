@@ -27,7 +27,16 @@
         }
 
         isMajeur(13);
-        isMajeur(20)
+        isMajeur(20);
+
+        // Exercice 3
+        $arrayOfNames = ["Thomas", "Jahel", "Evernight", "Burnice", "Nolann"];
+
+        foreach ($arrayOfNames as $name) {
+            echo $name . "\n";
+        }
+
+
     ?>
 
 
