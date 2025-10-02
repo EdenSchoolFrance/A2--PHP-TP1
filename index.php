@@ -7,5 +7,14 @@
 </head>
 <body>
     <h1><?php echo "Bienvenue dans mon premier TP PHP !"; ?></h1>
+
+    <p>
+        <?php 
+        $prenom = "Nolan";
+        $age = 17;
+
+        echo "Je m'appelle $prenom et j'ai $age ans !";
+        ?>
+    </p>
 </body>
 </html>
