@@ -6,25 +6,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php
-    $articles = [
-"Apprendre PHP pas à pas",
-"Faire sa premire requète SQL ",
-"Créer sa première page web"
-];
-?>
-        <h2>Mes articles</h2>
-        <ul>
-            <?php 
-            foreach($articles as $article) {
-                echo "<li>
-                    <div class='card'>
-                    $article
-                    </div>
-                </li>";
-            }
-            ?>
-        </ul>
-
+    <?php 
+        $userWithAge = [ 'Jonh' => 27, 'Simon' => 29, 'Mamadou' => 21, 'Karim' => 23];
+        foreach($userWithAge as $name => $age) {
+            echo "<p>$name a $age ans</p>";
+        }
+    ?>
 </body>
 </html>
