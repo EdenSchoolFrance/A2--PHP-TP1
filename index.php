@@ -9,24 +9,22 @@
 
 <body>
     <?php
-    $articles = [
-        "Apprendre PHP pas à pas",
-        "Faire sa première requête SQL",
-        "Créer sa première page web"
+    $usersWithAge = [
+        ["name" => "John", "age" => 27],
+        ["name" => "Simon", "age" => 29],
+        ["name" => "Mamadou", "age" => 21],
+        ["name" => "Karim", "age" => 23]
     ];
     ?>
-
     <div class="card">
-
-    <h2>Mes articles</h2>
-    <ul>
-        <?php
-        foreach($articles as $article) {
-            echo "<li>$article</li>";
-        }
-        ?>
-    </ul>
-
+        <h2>Utilisateurs</h2>
+        <ul>
+            <?php
+            foreach ($usersWithAge as $user) {
+                echo "<li>" . htmlspecialchars($user['name']) . " a " . htmlspecialchars($user['age']) . " ans</li>";
+            };
+            ?>
+        </ul>
     </div>
 </body>
 
