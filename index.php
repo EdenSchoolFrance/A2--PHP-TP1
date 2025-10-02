@@ -7,7 +7,6 @@
 </head>
 <body>
     <?php 
-
     $prenom = "Nolann";
     $age = 16;
 
@@ -18,25 +17,55 @@
         $class = "minor";
         $minorOrMajor = "je suis mineur";
     }
-
     ?>
 
     <h1><?php echo "salut"; ?></h1>
 
-    <p > <?php echo "Je suis " . $prenom . " et j ai " . $age . " ans"; ?> </p>
+    <p> <?php echo "Je suis " . $prenom . " et j ai " . $age . " ans"; ?> </p>
 
-    <p class="<?php $class; ?>"><?php echo $minorOrMajor; ?></p>
+    <p class="<?php echo $class; ?>"><?php echo $minorOrMajor; ?></p>
 
     <?php 
-
     $prenoms = ["PafMan", "Asteflix", "Asterion", "George", "Norman"];
 
-    
     foreach ($prenoms as $prenoms) {
         echo "<h3>$prenoms</h3>";
     }
+    ?>
 
+    <?php
+    $articles = [
+        "Apprendre PHP pas à pas",
+        "Faire sa premire requète SQL ",
+        "Créer sa première page web"
+    ];
+    ?>
 
+    <div class="card">
+        <ul>
+            <?php
+            foreach ($articles as $article) {
+                echo "<li>$article</li>";
+            }
+            ?>
+        </ul>
+    </div>
+
+    <?php
+
+    $usersWithAge = [
+        'Jonh' => "27 ans",
+        'Simon' => "29 ans",
+        'Mamadou' => "21 ans",
+        'Karim' => "23 ans"
+    ];
+
+    foreach ($usersWithAge as $name => $userAge) {
+        echo "<div class='card'>";
+        echo "<p>Nom : $name</p>";
+        echo "<p>Âge : $userAge</p>";
+        echo "</div>";
+    }
     ?>
 
 </body>
