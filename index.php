@@ -7,10 +7,24 @@
 </head>
 <body>
     <?php
-        $prenoms = ["Alice", "Bob", "Chloé", "David", "Emma"];
-        foreach($prenoms as $prenom) {
-            echo "<p>$prenom</p>";
-        }
-    ?>
+    $articles = [
+"Apprendre PHP pas à pas",
+"Faire sa premire requète SQL ",
+"Créer sa première page web"
+];
+?>
+        <h2>Mes articles</h2>
+        <ul>
+            <?php 
+            foreach($articles as $article) {
+                echo "<li>
+                    <div class='card'>
+                    $article
+                    </div>
+                </li>";
+            }
+            ?>
+        </ul>
+
 </body>
 </html>
