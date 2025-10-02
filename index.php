@@ -12,6 +12,7 @@
 
     $name = "Nohan";
     $age = 17;
+    $arrayName = ["Nathan", "Lola", "Max", "Léo", "Léa"];
 
     function YoungOrOld($age) {
         if ($age >= 18) {
@@ -22,6 +23,10 @@
     }
 
     echo YoungOrOld($age);
+
+    foreach ($arrayName as $name) {
+        echo "<p>$name</p>";
+    }
 
     ?>
 </body>
