@@ -1,20 +1,13 @@
 <?php
-function test($word, $age) {
-    if($age >= 18) {
+ $prenoms = ["Toufik", "Bob", "Alan", "Kevin", "Emma"];
 
 
 
-        echo "<h2 style='color: green';>Je suis majeur(e)</h2>";
+        foreach($prenoms as $prenom) {
 
 
-    }else {
+            echo "<p>$prenom</p>";
 
 
-        echo "<h2 style='color: red';>Je suis mineur(e)</h2>";
-
-
-    }
-    return "Hello $word tu as $age ans.";
-}
-echo test("John", 15)
+        }
 ?>
