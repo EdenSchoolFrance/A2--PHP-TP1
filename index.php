@@ -55,6 +55,21 @@
         </ul>
     </div>
 
+    <!-- Exercice 5 -->
+     <?php
+        $usersWithAge = [
+            "John" => 13,
+            "Simon" => 29,
+            "Mamadou" => 21,
+            "Karim" => 23,
+        ];
+
+
+        foreach ($usersWithAge as $user => $age) {
+            echo ("<p>$user a $age ans</p>");
+        }
+     ?>
+
 
 
 
