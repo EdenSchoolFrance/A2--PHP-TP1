@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><?php echo "Bienvenue dans mon premier TP PHP !"; ?></h1>
+    <?php
+    $prenom = "Raphael";
+    $age = 1;
+    echo "<h1>$prenom a $age ans</h1>";
+
+    ?>
 </body>
 </html>
