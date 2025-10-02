@@ -8,3 +8,11 @@ body {
 h1 {
     color: #2c3e50;
 }
+
+.mineur {
+    color: red;
+}
+
+.majeur {
+    color: green;
+}
