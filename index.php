@@ -9,7 +9,10 @@
     <h1><?php echo "Bienvenue dans mon premier TP PHP !"; ?></h1>
 
     <?php $prénom = 'Mark'; $age = 20;?>
+    <p><?php echo "Son prénom est " . $prénom . " et il a " . $age . " ans."?></p>
 
-    <p><?php echo "Son prénom est " ?><?php echo $prénom ?><?php echo " et il a " ?><?php echo $age ?><?php echo " ans." ?></p>
+    <?php if ($age >= 18) $color = 'green'; elseif ($age <= 18) $color = 'red';?>
+    <p style="color:<?php echo $color; ?>">Je suis majeur(e)</p>
+    
 </body>
 </html>
