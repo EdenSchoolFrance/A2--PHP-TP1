@@ -9,15 +9,13 @@
 
 <body>
     <h1><?php echo "Bienvenue dans mon premier TP PHP !"; ?></h1>
-    <p><?php $prenom = "Abel";
-    $age = 16;
-    echo "Je m'appelle $prenom et j'ai $age ans." ?></p>
-    <p <?php if ($age >= 18) {
-        echo "style=\"color: green\"";
-    } else {
-        echo "style=\"color: red\"";
-    } ?>>Je suis majeur
-    </p>
+
+    <?php
+    $names = ["Abel", "Raphael", "Warren", "Davide", "Yacine"];
+    foreach ($names as $name) {
+        echo "<p>$name</p>";
+    }
+    ?>
 </body>
 
 </html>
