@@ -9,7 +9,11 @@
     <h1><?php
     $prenom = "Jean";
     $age = 53;
-    echo "Je m'appelle $prenom et j'ai $age ans.";
+    if ($age >= 18) {
+        echo "<p style='color: lightgreen;'>Bonjour $prenom, vous êtes majeur.</p>";
+    } else {
+        echo "<p style='color: red;'>Bonjour $prenom, vous êtes mineur.</p>";
+    }
     ?></h1>
 </body>
 </html>
