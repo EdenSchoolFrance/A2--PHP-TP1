@@ -1,10 +1,7 @@
 <?php 
-$age = 17;
+$prenoms = ["Victor", "Gary", "Jahel", "Nolan", "Warren"];
 
-if ($age >= 18) {
-    echo '<p style="color:green;">Je suis majeur(e)</p>';
-} else {
-    echo '<p style="color:red;">Je suis mineur(e)</p>';
+foreach ($prenoms as $value) {
+    echo "\$prenoms: $value.\n";
 }
-
 ?>
