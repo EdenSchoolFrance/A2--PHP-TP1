@@ -11,8 +11,11 @@
 </html> -->
 
 <?php 
-function test($name, $lastname){
-    return $name." ".$lastname;
-};
+function test($age) {
+if ($age < "18") {
+    echo "<p>Je suis majeur(e)</p>";
+} else {
+    echo "<span>Je suis pas majeur(e)</span>";
+}};
 
-echo test("Romain", "Brival");
+echo test("19");
