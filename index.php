@@ -63,9 +63,12 @@
     foreach ($usersWithAge as $name => $age) {
         echo "<div class='card'>";
         echo "<p>$name a $age</p>";
+
+        echo "carte de  $name";
         echo "</div>";
     }
-?>
+
+    ?>
 
 </body>
 </html>
