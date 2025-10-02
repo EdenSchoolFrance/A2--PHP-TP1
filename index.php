@@ -6,16 +6,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>
+  
         <?php
-        $tableau = ["nolann1", "nolan2", "nolan3", "nolanimaginaire", "undefind"];
-
-        foreach ($tableau as $value) {
-            echo "$value ";
-        }
-
+     $articles = [
+         "Apprendre PHP pas à pas",
+         "Faire sa premire requète SQL ",
+         "Créer sa première page web"
+         ];
            ?>
 
-    </h1>
+            <div class="card">
+    <h2>Mes articles</h2>
+    <ul>
+    <?php
+        foreach ($articles as $article) {
+        echo "<li>$article</li>";
+        }
+    ?>
+    </ul>
+ </div>
+
+
 </body>
 </html>
