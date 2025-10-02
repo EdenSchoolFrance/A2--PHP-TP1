@@ -14,7 +14,7 @@
             echo ("<p>Coucou je m'appelle $prenom j'ai $age ans</p>");
         }
 
-        displayNameAndAge("Jahel", 15)
+        displayNameAndAge("Jahel", 17)
 
 
 
