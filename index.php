@@ -7,5 +7,21 @@
 </head>
 <body>
     <h1><?php echo "Bienvenue dans mon premier TP PHP !"; ?></h1>
+
+    <?php
+
+        function displayNameAndAge($prenom, $age) {
+            echo ("<p>Coucou je m'appelle $prenom j'ai $age ans</p>");
+        }
+
+        displayNameAndAge("Jahel", 15)
+
+
+
+    ?>
+
+
+
+
 </body>
 </html>
