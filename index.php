@@ -9,25 +9,14 @@
 
 <body>
     <h1><?php echo "Bienvenue dans mon premier TP PHP !"; ?></h1>
+
     <?php
-    $articles = [
-        "Apprendre PHP pas à pas",
-        "Faire sa premire requète SQL ",
-        "Créer sa première page web"
-    ];
+    $usersWithAge = ['Jonh' => "27 ans", 'Simon' => "29 ans", 'Mamadou' => "21 ans", "Karim" => "23 ans"];
+    foreach ($usersWithAge as $name => $age) {
+        echo "<p>$name a $age</p>";
+    }
     ?>
 
-    <div class="card">
-        <h2>Mes articles</h2>
-        <ul>
-            <?php
-            foreach ($articles as $article) {
-                echo "<li>$article</li>";
-            }
-
-            ?>
-        </ul>
-    </div>
 </body>
 
 </html>
