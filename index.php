@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1><?php echo "Bienvenue dans mon premier TP PHP !"; ?></h1>
+    
 </body>
 </html>
